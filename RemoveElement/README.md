@@ -1,5 +1,7 @@
 Problem Description:
-Given an integer array nums and an integer val, remove all instances of val in nums in place. The relative order of the elements should be kept the same. The function should return the new length of the array after removal.
+Given an integer array nums and an integer val, remove all instances of val in nums in place.
+The relative order of the elements should be kept the same. The function should return
+the new length of the array after removal.
 
 
 Approach:
