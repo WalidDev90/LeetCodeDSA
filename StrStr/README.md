@@ -1,17 +1,19 @@
 Problem Description:
-Given a string s consisting of just '(', ')', '{', '}', '[', and ']',
-determine if the input string is valid. An input string is valid if:
-Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order.
+Find the first occurrence of a substring (needle) in a string (haystack).
+Return the index of the first character of the match,
+or -1 if the substring is not found. If needle is empty, return 0.
+
 
 Approach:
-Use an array to keep track of opening brackets. For each closing bracket,
-check if it matches the most recent opening bracket in the array.
-If they match, remove the element; otherwise, return false.
-Finally, return true if the array is empty after processing the string.
+Use two pointers: i for haystack and j for needle.
+Compare characters at haystack[i] and needle[j].
+If a mismatch occurs, reset i to the next possible starting position and j to 0.
+If needle is found, return the starting index.
 
 
-Time Complexity: O(n), where n is the length of the string.
+Time Complexity:
+O(n * m), where n is the length of haystack and m is the length of needle.
 
 
-Space Complexity: O(n), due to the stack storing at most n characters.
+Space Complexity:
+O(1), as only pointers and counters are used
