@@ -2,7 +2,7 @@ Problem Description:
 Given a string word, return true if it follows one of these capitalization rules:
 All letters are uppercase.
 All letters are lowercase.
-The first letter is uppercase, and the rest are lowercase.
+The first letter is uppercase and the rest are lowercase.
 
 
 Approach:
